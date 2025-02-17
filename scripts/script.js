@@ -1,7 +1,8 @@
 let couponInput="";
+
 document.getElementById('coupon-code').addEventListener('keyup', function (event) {
     const button = document.getElementById('coupon-btn');
-    if (event.target.value !== "") {
+    if (event.target.value !== "" && selectedSeats>3) {
         button.classList.remove('hidden')
     }
     else {
@@ -66,3 +67,15 @@ function priceAfterCoupon(){
     }
     
 }
+
+// const nameInput = document.querySelector('#name-input').value.trim();
+// const phoneInput = document.querySelector('#number-input').value.trim();
+// const emailInput = document.querySelector('#email-input').value;
+
+// console.log(emailInput)
+
+// if(nameInput!=="" && phoneInput!==""){
+//     document.getElementById('next-btn').classList.remove('hidden');
+// }
+
+

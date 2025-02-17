@@ -436,22 +436,26 @@
                             <b>BDT <span id="grand-total">00</span></b>
                         </div>
                     </div>
+
+
                     <div class="flex flex-col">
                         <b class="text-start pt-7 pb-2">Passenger Name <sup>*</sup></b>
-                        <input required type="text" placeholder="Enter your name"
+                        <input id="name-input" required type="text" placeholder="Enter your name"
                             class="p-3 border border-gray-400 rounded-lg">
                     </div>
                     <div class="flex flex-col">
                         <b class="text-start pt-5 pb-2">Phone Number<sup>*</sup></b>
-                        <input required type="number" placeholder="Enter your phone number"
+                        <input id="number-input" required type="number" placeholder="Enter your phone number"
                             class="p-3 border border-gray-400 rounded-lg">
                     </div>
                     <div class="flex flex-col">
                         <b class="text-start pt-5 pb-2">Email ID</b>
-                        <input required type="email" placeholder="Enter your email id"
+                        <input id="email-input" required type="email" placeholder="Enter your email id"
                             class="p-3 border border-gray-400 rounded-lg">
                     </div>
-                    <button class="btn bg-[rgb(29,209,0)] w-full mt-5">Next</button>
+                    <button id="next-btn" class="btn bg-[rgb(29,209,0)] w-full mt-5 hidden">Next</button>
+
+
                     <div class="flex justify-between px-10 py-5">
                         <a class="border-b-2 border-gray-400 text-gray-600" href="">Terms and Conditions</a>
                         <a class="border-b-2 border-gray-400 text-gray-600" href="">Cancellation Policy</a>
